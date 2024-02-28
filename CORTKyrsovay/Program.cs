@@ -37,7 +37,7 @@ namespace CORTKyrsovay
                 // Выводим название алгоритма, количество перестановок и время выполнения
                 sortedArrays[algorithm.Key] = sortedArray;
                 Console.WriteLine($"{algorithm.Key}:");
-                Console.WriteLine($"Отсортированный массив: {string.Join(", ", sortedArray)}");
+                Console.WriteLine($"Отсортированный массив: {string.Join(", ", sortedArray)} ");
                 Console.WriteLine($"Кол-во перестановок: {numSwaps}");
                 Console.WriteLine($"Время: {result.Item2} ms");
                 Console.WriteLine();
