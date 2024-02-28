@@ -78,7 +78,6 @@ namespace CORTKyrsovay
                     }
                 }
             }
-
             stopwatch.Stop();
            
             return (arr, numSwaps, stopwatch.ElapsedMilliseconds);
@@ -112,7 +111,6 @@ namespace CORTKyrsovay
                 }
                 numSwaps++;
             }
-
             stopwatch.Stop();
 
             return (arr, numSwaps, stopwatch.ElapsedMilliseconds);
@@ -123,7 +121,6 @@ namespace CORTKyrsovay
         {
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
-
             int n = arr.Length;
             int numSwaps = 0;
 
@@ -141,7 +138,6 @@ namespace CORTKyrsovay
                 numSwaps++;
                 arr[j + 1] = key;
             }
-
             stopwatch.Stop();
            
             return (arr, numSwaps, stopwatch.ElapsedMilliseconds);
@@ -156,13 +152,9 @@ namespace CORTKyrsovay
             {
                 return (new int[0], 0, 0);
             }
-
             Stopwatch stopwatch = new Stopwatch();
-            stopwatch.Start();
-           
-            //numComparisons += leftComparisons + rightComparisons;
+            stopwatch.Start();                     
             MergeSortRecursive(arr, 0, n - 1, ref numSwaps);
-
             stopwatch.Stop();
           
             return (arr, numSwaps, stopwatch.ElapsedMilliseconds);

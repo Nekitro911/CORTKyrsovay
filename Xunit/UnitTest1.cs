@@ -107,41 +107,7 @@ namespace Xunit
             Assert.AreEqual(arr, result.Item1);
             Assert.AreEqual(0, result.Item2);
             Assert.AreEqual(0, result.Item3);
-        }
-        //[TestMethod]
-        //public void SelectionSort_UnsortedArray_ReturnsSortedArray()
-        //{
-        //    int[] arr = new int[] { 5, 3, 1, 2, 4 };
-        //    (int[], int, long) result = SelectionSort(arr);
-
-        //    int[] expected = new int[] { 1, 2, 3, 4, 5 };
-        //    Assert.AreEqual(expected, result.Item1);
-        //    Assert.AreEqual(4, result.Item2);
-        //    Assert.IsTrue(result.Item3 > 0);
-
-        //}
-        //[TestMethod]
-        //public void SelectionSort_LargeArray_ReturnsSortedArray()
-        //{
-        //    int[] arr = new int[10000];
-        //    Random random = new Random();
-        //    for (int i = 0; i < arr.Length; i++)
-        //    {
-        //        arr[i] = random.Next(1, 10000);
-        //    }
-
-        //    (int[], int, long) result = SelectionSort(arr);
-
-        //    int[] expected = new int[10000];
-        //    Array.Copy(arr, expected, 10000);
-        //    Array.Sort(expected);
-
-        //    Assert.AreEqual(expected, result.Item1);
-        //    Assert.IsTrue(result.Item2 > 0);
-        //    Assert.IsTrue(result.Item3 > 0);
-
-        //}
-
+        }      
         public static (int[], int, long) SelectionSort(int[] arr)
         {
             Stopwatch stopwatch = new Stopwatch();
@@ -177,44 +143,7 @@ namespace Xunit
     }
     [TestClass]
     public class QuickSort
-    {
-        //[TestMethod]
-        //public void QuickSort_WithRandomArray_SortsArrayCorrectly()
-        //{
-        //    // Arrange
-        //    int[] arr = GenerateRandomArray(1000);
-        //    int[] expectedArray = (int[])arr.Clone();
-        //    Array.Sort(expectedArray);
-
-        //    // Act
-        //    var result = Program.QuickSort(arr);
-        //    int[] sortedArray = result.Item1;
-
-        //    // Assert
-        //    Assert.AreEqual(expectedArray, sortedArray);
-
-        //}
-
-        //[TestMethod]
-        //public void QuickSort_WithSortedArray_SortsArrayCorrectly()
-        //{
-        //    // Arrange
-        //    int[] arr = new int[] { 1, 2, 3, 4, 5 };
-        //    int[] expectedArray = (int[])arr.Clone();
-        //    Array.Sort(expectedArray);
-
-        //    // Act
-        //    var result = Program.QuickSort(arr);
-        //    int[] sortedArray = result.Item1;
-        //    int numSwaps = result.Item2;
-        //    long elapsedMilliseconds = result.Item3;
-
-        //    // Assert
-        //    Assert.AreEqual(expectedArray, sortedArray);
-        //    Assert.AreEqual(0, numSwaps);
-        //    Assert.IsTrue(elapsedMilliseconds > 0);
-        //}
-
+    {        
         [TestMethod]
         public void QuickSort_WithEmptyArray_ReturnsEmptyArray()
         {
@@ -246,3 +175,4 @@ namespace Xunit
             return arr;
         }
     }
+}
