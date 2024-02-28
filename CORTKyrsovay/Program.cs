@@ -195,8 +195,7 @@ namespace CORTKyrsovay
                 {
                     temp[k] = arr[i];
                     i++;
-                    numSwaps++;
-                    //numSwaps += mid - i + 1;
+                    numSwaps++;                  
                 }
                 else
                 {
